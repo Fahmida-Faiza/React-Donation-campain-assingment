@@ -10,7 +10,7 @@ const Header = () => {
     
     </>
     return (
-     <div className="">
+     <div className="px-10 py-2 lg:px-36 lg:pt-10">
 
             <div className="navbar bg-base-100 ">
                 <div className="navbar-start">

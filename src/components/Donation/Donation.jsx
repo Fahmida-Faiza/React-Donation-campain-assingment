@@ -26,9 +26,9 @@ const Donation = () => {
 
     }, [])
     return (
-        <div>
+        <div className="max-w-7xl mx-auto">
             <h2> jobs i applied/ Donation: {appliedjobs.length}</h2>
-            <ul className="grid grid-cols-2 gap-6">
+            <ul className="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
                 {
 
@@ -37,7 +37,7 @@ const Donation = () => {
 
 
                         <div className="card card-side bg-base-100 shadow-xl">
-                            <figure><img src={job.img} alt="Movie" /></figure>
+                            <img src={job.img} alt="Movie" />
                             <div className="card-body" style={{ backgroundColor: job.color["category-color"] }}>
                                 <div className="card-actions ">
                                     <button className="btn  " style={{

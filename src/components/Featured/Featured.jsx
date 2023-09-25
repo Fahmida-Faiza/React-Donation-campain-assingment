@@ -16,12 +16,12 @@ useEffect( () =>{
 
     return (
         <div>
-            <div className="text-center">
+            <div className="text-center my-3 lg:my-10">
                 <h2>all donated list:{jobs.length} </h2>
             </div>
 
 
-            <div className="grid grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
 
                 {
                     jobs.map(job => <Job key ={job.id} job={job}></Job>)

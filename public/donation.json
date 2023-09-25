@@ -1,0 +1,158 @@
+[
+    {   "id":1,
+        "img": "https://i.ibb.co/cQBRxh3/Health.png",
+        "category": "health",
+        "title": "Healthy Lifestyle Guide",
+        "description": "Discover the secrets to a healthier life.",
+        "price": "$19.99",
+        "color": {
+            "background-color": "#0052ff26",
+            "category-color": "#0052ff33",
+            "category-title-color": "#0052FF"
+        }
+    },
+    {
+        "id":2,
+        "img": "https://i.ibb.co/8zHmVBm/Education.png",
+        "category": "education",
+        "title": "Learn to Code with Python",
+        "description": "Master Python programming in no time.",
+        "price": "$29.99",
+        "color": {
+            "background-color": "#ff444a26",
+            "category-color": "#ff444a33",
+            "category-title-color": "#FF444A"
+        }
+    },
+    {
+        "id":3,
+        "img": "https://i.ibb.co/Qr8p3qY/Clothing.png",
+        "category": "clothing",
+        "title": "Stylish Denim Jacket",
+        "description": "Stay trendy with this denim jacket.",
+        "price": "$49.99",
+        "color": {
+            "background-color": "#79c23f26",
+            "category-color": "#79c23f33",
+            "category-title-color": "#79C23F"
+        }
+    },
+    {
+        "id":4,
+        "img": "https://i.ibb.co/7vxTcj8/Food.png",
+        "category": "food",
+        "title": "Gourmet Chocolate Truffles",
+        "description": "Indulge in the finest chocolate truffles.",
+        "price": "$14.99",
+        "color": {
+            "background-color": "#f8714726",
+            "category-color": "#f8714733",
+            "category-title-color": "#F87147"
+        }
+    },
+    {
+        "id":5,
+        "img": "https://i.ibb.co/cQBRxh3/Health.png",
+        "category": "health",
+        "title": "Yoga for Beginners",
+        "description": "Start your journey to better health with yoga.",
+        "price": "$24.99",
+        "color": {
+            "background-color": "#0052ff26",
+            "category-color": "#0052ff33",
+            "category-title-color": "#0052FF"
+        }
+    },
+    {
+        "id":6,
+        "img": "https://i.ibb.co/8zHmVBm/Education.png",
+        "category": "education",
+        "title": "Mathematics Workbook",
+        "description": "Sharpen your math skills with this workbook.",
+        "price": "$12.99",
+        "color": {
+            "background-color": "#ff444a26",
+            "category-color": "#ff444a33",
+            "category-title-color": "#FF444A"
+        }
+    },
+    {
+        "id":7,
+        "img": "https://i.ibb.co/Qr8p3qY/Clothing.png",
+        "category": "clothing",
+        "title": "Designer Sunglasses",
+        "description": "Protect your eyes in style with these sunglasses.",
+        "price": "$79.99",
+        "color": {
+            "background-color": "#79c23f26",
+            "category-color": "#79c23f33",
+            "category-title-color": "#79C23F"
+        }
+    },
+    {
+        "id":8,
+        "img": "https://i.ibb.co/7vxTcj8/Food.png",
+        "category": "food",
+        "title": "Organic Fruit Basket",
+        "description": "Enjoy a variety of fresh organic fruits.",
+        "price": "$34.99",
+        "color": {
+            "background-color": "#f8714726",
+            "category-color": "#f8714733",
+            "category-title-color": "#F87147"
+        }
+    },
+    {
+        "id":9,
+        "img": "https://i.ibb.co/cQBRxh3/Health.png",
+        "category": "health",
+        "title": "Meditation Guide",
+        "description": "Find inner peace through meditation.",
+        "price": "$19.99",
+        "color": {
+            "background-color": "#0052ff26",
+            "category-color": "#0052ff33",
+            "category-title-color": "#0052FF"
+        }
+    },
+    {
+        "id":10,
+        "img": "https://i.ibb.co/8zHmVBm/Education.png",
+        "category": "education",
+        "title": "History of Ancient Civilizations",
+        "description": "Explore the mysteries of ancient cultures.",
+        "price": "$39.99",
+        "color": {
+            "background-color": "#ff444a26",
+            "category-color": "#ff444a33",
+            "category-title-color": "#FF444A"
+        }
+    },
+    {
+        "id":11,
+        "img": "https://i.ibb.co/Qr8p3qY/Clothing.png",
+        "category": "clothing",
+        "title": "Cozy Knit Sweater",
+        "description": "Stay warm and stylish in this knit sweater.",
+        "price": "$54.99",
+        "color": {
+            "background-color": "#79c23f26",
+            "category-color": "#79c23f33",
+            "category-title-color": "#79C23F"
+        }
+    },
+    {
+        "id":12,
+        "img": "https://i.ibb.co/7vxTcj8/Food.png",
+        "category": "food",
+        "title": "Gourmet Coffee Beans",
+        "description": "Savor the rich flavors of gourmet coffee.",
+        "price": "$9.99",
+        "color": {
+            "background-color": "#f8714726",
+            "category-color": "#f8714733",
+            "category-title-color": "#F87147"
+        }
+    }
+]
+

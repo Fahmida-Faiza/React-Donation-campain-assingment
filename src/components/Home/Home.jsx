@@ -1,9 +1,15 @@
+import Banner from "../Banner/Banner";
+import Featured from "../Featured/Featured";
 
 
 const Home = () => {
     return (
         <div>
-            <h1>this is home</h1>
+            <Banner></Banner>
+            {/* <h1>this is home</h1>
+             */}
+
+             <Featured></Featured>
         </div>
     );
 };

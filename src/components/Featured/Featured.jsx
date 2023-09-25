@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
+import Job from "../Job/Job";
 
 
 const Featured = () => {
 
-const [donations ,setdonations] = useState([]);
+const [jobs ,setjobs] = useState([]);
 
 useEffect( () =>{
  fetch('donation.json')
  .then(res => res.json())
- .then(data => setdonations(data))
+ .then(data => setjobs(data))
 }, [])
 
 
@@ -16,7 +17,15 @@ useEffect( () =>{
     return (
         <div>
             <div className="text-center">
-                <h2>all donated list:{donations.length} </h2>
+                <h2>all donated list:{jobs.length} </h2>
+            </div>
+
+
+            <div className="grid grid-cols-4 gap-6">
+
+                {
+                    jobs.map(job => <Job key ={job.id} job={job}></Job>)
+                }
             </div>
         </div>
     );

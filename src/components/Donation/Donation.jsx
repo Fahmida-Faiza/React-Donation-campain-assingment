@@ -9,7 +9,7 @@ const Donation = () => {
 
     const [appliedjobs, setappliedjobs]= useState([]);
 
-    const[dataLength, setDataLength] = useState(4)
+    const[dataLength, setDataLength] = useState(4);
 
     useEffect (() =>{
         const storedJobIds =getStoredJobApplication()
@@ -21,13 +21,14 @@ const Donation = () => {
             setappliedjobs(jobsApplied);
             console.log(jobs, storedJobIds,jobsApplied)
         }
+        // console.log(jobs.length)
 
   
 
     }, [])
     return (
         <div className="max-w-7xl mx-auto">
-            <h2> jobs i applied/ Donation: {appliedjobs.length}</h2>
+            <h2>Donation: {appliedjobs.length}</h2>
             <ul className="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
                 {
@@ -63,12 +64,14 @@ const Donation = () => {
             {/* show all button */}
 
           
-            <div className={dataLength === jobs.length  ? 'hidden' : ''}>
-                <button 
-                onClick={()=> setDataLength(jobs.length)
-                }
-                
-                className="btn btn-secondary ">See All</button>
+            <div className={dataLength === jobs.length  ? 'hidden' : ''}> 
+                <div className="text-center lg-4 lg:mt-10">
+                    <button
+                        onClick={() => setDataLength(jobs.length)
+                        }
+
+                        className="btn btn-success text-white  ">See All</button>
+                </div>
             </div>
     
         </div>

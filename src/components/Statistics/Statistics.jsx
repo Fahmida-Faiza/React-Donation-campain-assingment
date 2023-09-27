@@ -1,40 +1,43 @@
-// import axios from "axios";
-// import { useEffect, useState } from "react";
-// import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
 
+import { PieChart, Pie, ResponsiveContainer, Cell } from 'recharts';
 
-// const Statistics = () => {
+const data = [
+    { name: 'Total', value: 12 },
+    { name: 'Donations', value: 6 },
+];
 
-    
-// const [pies, setpies] = useState([]);
-
-// useEffect(() => {
-//  axios.get('donation.json')
-// .then(data => setpies(data.data));
-
-
-// }, [])
-
-
-//     return (
-//         <div>
-//             <h2>faiza bro: {pies.length}</h2>
-
-//             <PieChart width={700} height={700}>
-//                 <Pie data={pies} dataKey="id" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
-//                 {/* <Pie data={id} dataKey="value" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label /> */}
-//             </PieChart>
-         
-//         </div>
-//     );
-// };
-
-// export default Statistics;
+const COLORS = ['#0088FE', '#00C49F'];
 
 const Statistics = () => {
+    const totalValue = data.reduce((total, entry) => total + entry.value, 0);
+
     return (
-        <div>
-            <h2>Faiza bro</h2>
+        <div className="statistics-container flex justify-center items-center">
+            <ResponsiveContainer width={400} height={400}>
+                <PieChart>
+                    <Pie
+                        data={data}
+                        cx="50%"
+                        cy="50%"
+                        labelLine={false}
+                        outerRadius={80}
+                        fill="#8884d8"
+                        dataKey="value"
+                    >
+                        {data.map((entry, index) => (
+                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                        ))}
+                    </Pie>
+                </PieChart>
+            </ResponsiveContainer>
+            <div className="legend">
+                {data.map((entry, index) => (
+                    <div key={`legend-${index}`} className="legend-item">
+                        <div className="legend-color" style={{ backgroundColor: COLORS[index % COLORS.length] }}></div>
+                        <div className="legend-label legend-color font-bold text-xl" style={{ color: COLORS[index % COLORS.length] }}>{`${entry.name}: ${(entry.value / totalValue * 100).toFixed(0)}%`}</div>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };
